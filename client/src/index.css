@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+    
+  :root{
+    --main-color:#be9c79;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+ 
+
+ *{ 
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+   
+ }
+ 
+ *::selection{
+    background-color: var(--main-color);
+    color:var(--white);
+ }
+ 
+  ::-webkit-scrollbar{
+     height: .5rem;
+     width: 1rem;
+  }
+  
+  ::-webkit-scrollbar-track{
+     background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+     background-color: var(--main-color);
+  }
+ 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ----------------- Header ------------------- */
+@import url("./components/header/header.css");
+
+/* ----------------- Auth ------------------- */
+@import url("./components/body/auth/auth.css");
+
+/* ----------------- Profile ------------------- */
+@import url("./components/body/profile/profile.css");
+
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+     visibility: visible;
+     opacity: 1;
+     font-size: 3rem;
+     background: none;
+     color: #512a10;
+  }
+
+  header nav{
+  
+     width: 100%;
+  }
+ header{
+  width: 100%;
+
+ }
+  header  div{
+   font-size: 1px;
+  }
+
+  header nav {
+     background-color:var(--main-color);
+     position: absolute;
+     top: 6.5rem;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 1.5rem;
+     background-color: var(#be9c79);
+     transition: 1s;
+     transform: translateY(-100vh);
+     display: block;
+  }
+
+  header .responsive_nav {
+     transform: none;
+  }
+
+  nav .nav-close-btn {
+     position: absolute;
+     top: .1rem;
+     right: 1rem;
+  }
+ #start{
+     
+     position: absolute;
+     bottom: 20%;
+     left: 82%;
+     
+  }
+
+  nav a {
+     font-size: 1.5rem;
+  }
+
+  .home .home-bg{
+    background:cover;
+  }
+}

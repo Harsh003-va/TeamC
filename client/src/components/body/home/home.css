@@ -1,0 +1,109 @@
+.home_page{
+    background:linear-gradient(90deg, var(--black), transparent 60%), url(./HOME.jpg) no-repeat;
+    background-size:cover;
+    display: block;
+    background-position: center;
+    bottom: auto;
+}
+.home-bg{
+    min-height: 45rem;
+    display: flex;
+    align-items: center;
+ }
+/*.home_page h3{
+    font-size: 2rem;
+    margin: 10px 0;
+    color: teal;
+}
+.home_page p{
+    color: #777;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.home_page a{
+    color: white;
+    background: crimson;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 10px 0;
+    letter-spacing: 1.2px;
+}
+.home_page h3{
+    color: chocolate;
+    margin-top: 30px;
+}*/
+
+.content h3{
+    animation: fadeIn 800ms forwards;
+    opacity: 0;
+    animation-delay: 400ms;
+ }
+ @keyframes fadeIn{
+    to{
+       opacity: 1;
+    }
+ 
+ }
+ .content p{
+    animation: fadeToRight 80ms forwards cubic-bezier(0.22, 0.32, 0.44, 0.83);
+    opacity: 0;
+    animation-delay: 800ms;
+ }
+ @keyframes fadeToRight{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+
+.home-bg .home .content{
+      width: 40rem;
+      text-align: center;
+     
+      
+   }
+   
+   .home_page .content h3{
+      font-size: 4rem;
+      color:var(--white);
+      font-family: 'Merienda One', cursive;
+      margin-left: 5rem;
+   }
+   
+   .home_page .content p{
+      padding:.1rem 0;
+      font-size: 1.7rem;
+      color:var(--white);
+      line-height: 2;
+      margin-left: 5rem;
+      font-style: italic;
+   }
+   #homebtn{
+    animation: fadeIn 1000ms forwards;
+    opacity: 0;
+    animation-delay: 1400ms;
+ }
+  
+ .btnn{
+  color:var(--white);
+  font-size: 1.2rem;
+  padding:1rem 3rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  border: 2rem;
+ }
+ .btnn:hover{
+  background-color:#5d3419;
+  color: white;
+  border: 2rem;
+ }

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+#login a{
+    color:#76492b;
+}
+#form{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#login{
+    margin-top: 5rem;
+}
+#login label{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#login input{
+    font-size: 1rem;
+    font-family:roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+
+#login :placeholder-shown{
+    text-align: center;
+  }
+  .formbar{
+    
+    padding-top: 5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    
+  }
+  form input {
+    width: 100%;
+    padding: 7px;
+  
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.5rem;
+  }
+  .bgg{
+   
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( 
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.5)
+  ),
+  url("./cof.jpg")
+    center;
+  background-size: cover ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   }
+
+  #login .button{
+    width: 95%;
+    height: 45px;
+    margin-top: 2px;
+    margin-top: 20px;
+    border:#0a0a09 2rem;
+    background-color: #76492b;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight:500;
+  }
+   #login .button:hover {
+
+    background:#af661e;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+  }
+
+  #login .hr{
+    color:#76492b;
+    font-weight: normal;
+  }
+
+  #login p{
+    margin-top: 15px;
+    text-align: center;
+    color: #2c1303;
+} 
+
+#login{
+   
+        background-color: white;
+        width: 30%;
+        height: 80%;
+        justify-content: center; 
+        margin-bottom: 20px;
+        margin-top: 1rem;
+        padding-bottom: 1px;
+        padding-top: 2rem;
+        padding-right: 25px;
+        padding-left: 40px;
+        border-radius: 3rem ;
+        border: #0a0a09;
+        box-shadow: 1px 2px 1px 2px black; 
+}
